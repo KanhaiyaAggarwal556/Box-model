@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Box Model</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        .container{
+            height: 600px;
+            width: 600px;
+            display: flex;
+            position: relative;
+            border: 2px solid black;
+            background-color: aliceblue;
+        }
+        .box{
+            height: 200px;
+            width: 200px;
+            border: 1px solid darkolivegreen;
+            position: absolute;
+        }
+        #box1{
+            top: 0%;
+            left: 0%;
+            background-color: rgb(165, 205, 205);
+        }
+        #box2{
+            top: 0%;
+            right : 0%;
+            background-color: rgb(173, 205, 165);
+        }
+        #box3{
+            bottom: 0%;
+            left: 0%;
+            background-color: rgb(173, 165, 205);
+        }
+        #box4{
+            bottom: 0%;
+            right: 0%;
+            background-color: rgb(205, 165, 171);
+        }
+        #box5{
+            top: 33.33%;
+            left: 33.33%;
+            background-color: rgb(205, 198, 165);
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="box" id = "box1"></div>
+        <div class="box" id = "box2"></div>
+        <div class="box" id = "box3"></div>
+        <div class="box" id = "box4"></div>
+        <div class="box" id = "box5"></div>
+    </div>
+</body>
+</html>
